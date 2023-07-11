@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark"">
+    <nav class="navbar  bg-primary" data-bs-theme="dark" data-bs-theme="dark"">
         <div class="container">
           <a class="navbar-brand mx-auto fs-1 text-decoration-line-through fw-bold" >
             CRUD Js
@@ -25,12 +25,12 @@
         <div class="container mb-5">
           <div class="row">
             <div class="mb-3">
-              <label class="form-label">Correo</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+              <label class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nombre completo">
             </div>
             <div class="mb-3">
-              <label class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="inputName" placeholder="nombre completo">
+                <label class="form-label">Correo</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
             </div>
             <div class="mb-3">
               <label class="form-label">Numero de telefono</label>
@@ -38,13 +38,13 @@
             </div>
             <div class="container">
               <button type="submit" class="btn btn-primary" id="btnAdd" onclick="AddData()">Enviar Datos</button>
-              <button type="submit" class="btn btn-warning" id="btnUpdate">Actualizar Datos</button>
+              <button type="submit" class="btn btn-info" id="btnUpdate">Actualizar Datos</button>
             </div>
           </div>
           <hr>
           <table class="table table-bordered" id="tableData">
             <thead>
-              <tr>
+              <tr class="text-center">
                 <th scope="col">Correo</th>
                 <th scope="col">Nombres</th>
                 <th scope="col">Celular</th>
